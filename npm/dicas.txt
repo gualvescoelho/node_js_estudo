@@ -1,0 +1,24 @@
+npm init -y, responde tudo com YES, iniciando com configurações padrões
+
+npm install
+ou 
+npm i
+e 
+npm install -D, salva a dependencia para desenvolvimento, então salvando caso outro desenvolvedor for ter contato, salvando essa informação no package.json
+Usar o npm update para salvar alterações no package json
+
+Ao deletar o node_modules ou package.json ou package-lock.json é possivel baixar novamente so utilizando o 'npm install', ou algo assim
+
+npm i opn -g, instala de maneira global o pacote,
+para chamar o pacote usar: npm root -g
+
+para desinstalar: npm uninstall nome_pacote
+
+'^x.yz.p', sinal ^ quer dizer que o npm sempre que atualizar vai atualizar o 'yz.p'
+'~x.yz.p', sendo essa a versão se tiver o sinal ~ vai atualizar so o patch (p);
+'x.yz.p', vai manter essa versão fixa
+'*', vai mudar todas as versões
+
+npm outdated, informa quais pacotes estão desatualizados, e caso haja algum pacote
+desatualizado utilizar o npm upgrade para atualizar todos e para pegar a versão mais 
+atualizada utilizar: npm i nome_pacote@latest
